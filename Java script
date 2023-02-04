@@ -1,0 +1,201 @@
+/*
+Java script 
+Data types :
+ String
+ Number 
+ Object ---> Array
+ Boolean
+ Undefined
+ Null
+.
+.
+
+Variables
+
+Syntax 
+(var | variable name | Assigment operator | Variable value)
+var user = "ibrahim";
+
+console.log(user);
+
+identfiers 
+
+var
+redeclare (yes)
+access before declare (Undefined)
+// console.log(a);
+// var a = 2;
+variable scope drama (added to window)
+block or function scope 
+
+let 
+redeclare (no ==>error)
+access before declare (erorr)
+// console.log(a);
+// let a = 2;
+variable scope drama (not added in wondow )
+block or function scope 
+
+const
+
+redeclare (no ==> error)
+access before declare (erorr)
+// console.log(a);
+// const a = 2;
+variable scope drama (not added in wondow )
+block or function scope 
+
+
+String syntax + character escaped sequences
+
+Escaped + line continue 
+\n new line
+n space
+
+concatenation 
+let h1 = "We love";
+let b2 = "JAVA SCRIPT";
+
+document.write(h1 + " " + b2);
+console.log(h1, b2);
+
+concatenation ECM6
+Template literals
+(template strings)
+console.log(`${w} ${j} " " ' ' \\ ${an} ${p}`);
+
+Arithmetic operators 
++ Addition 
+- Subtraction 
+* Multiplicatin
+/ Division 
+** Exponentiation
+% Moduls (Divison remainder)
+++ Increment [POST / Pre]
+-- Decrement [POST / Pre]
+
+
+Unary plus - + (return number if its not number)
+Unary negation - - (Return number if its not not number  + negats it )
+
+tests 
+normal number 
+string number string negative number 
+string text 
+float 
+hexademical numeral system ==>off 
+null
+false 
+true
+
+math object 
+round ()
+ceil()
+floor()
+min()
+max()
+pow()
+random()
+trunc() [ECM6]
+
+string methods
+access with index 
+access with charat 
+length 
+trim
+touppercase 
+tolowercase
+chain methods 
+
+comparison operators
+== equal 
+!= not equal
+=== identical 
+!== not identical
+> larger than
+>= larger than or equal
+<smaller  than
+<= smaller than or equal
+
+if condition
+if 
+if else 
+else
+
+if (condition )
+{
+    .........
+}
+
+switch statement 
+switch (expression) {
+    case 1:
+    // code block 
+    break;
+      case 2:
+    // code block 
+    break;
+      case 3:
+    // code block 
+    break;
+      case 4:
+    // code block 
+    break;
+    default:
+    // code block
+}
+
+Arrays
+create arrays [Two methods] new array () + []
+access array elements 
+nested arrays 
+change arrays elements 
+chech for array Array.isArray(arr)
+
+Array methods
+- length
+add and remove 
+unshift ("", "") add element to the first 
+push ("", "") add element to the end 
+shift () remove first element 
+pop() remove last element from array 
+search 
+indexOf(Search element, from index[opt])
+lastIndexof(Search element, from index[opt])
+includes (valueTofind)
+sort
+reverse
+slicing
+slice (start [opt], end [opt] not including end )
+slice() ==> All array 
+if start is undefined ==>0
+negative count from end 
+if end is undefined || > indexes => slice to the end array.length
+return new array 
+splice (start[mand] , deletecount [opt] [0 no remove ], the items to add [opt])
+if negative => start from the end 
+joining arrays 
+concat(array, array )=> return a new array 
+join (separator)
+
+for loop
+syntax
+for ([1] [2] [3]) {
+    //block code 
+}
+nested loop
+for ([1] [2] [3]) {
+    for ([1] [2] [3]) {
+    //block code 
+}
+for ([1] [2] [3]) {
+    //block code 
+}
+}
+
+loop control 
+- break 
+- continue
+- label
+
+*/

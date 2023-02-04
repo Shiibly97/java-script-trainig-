@@ -1,0 +1,28 @@
+h1 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+.switch {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#fi {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}

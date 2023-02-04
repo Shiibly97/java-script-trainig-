@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="task4.css">
+    <script type="text/javascript" src="task4.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java Script</title>
+</head>
+
+<body>
+    <h1>Task 4</h1>
+    <div class="switch">
+        <h4>
+            Transform from if statement to switch
+        </h4>
+        <p>
+
+            <u><b>If statement   </b></u><br>
+            let job = "Manager";<br>
+            let salary = 0;<br>
+            if (job === "Manager") {<br>
+            salary = 8000;<br>
+            } else if (job === "IT" || job === "Support") {<br>
+            salary = 6000;<br>
+            } else if (job === "Developer" || job === "Designer") {<br>
+            salary = 7000;<br>
+            } else {<br>
+            salary = 4000;<br>
+            }<br>
+        </p>
+        <p>
+            <u><b>Switch</b></u><br>
+            let job = "Manager";<br>
+            let salary = 0;<br>
+            switch (job) {<br>
+            case ("Manager"):<br>
+            salary = 8000;<br>
+            console.log(`The salary is ${salary}`)<br>
+            break;<br>
+            case ("IT" || "Support"):<br>
+            salary = 6000;<br>
+            console.log(`The salary is ${salary}`)<br>
+            break;<br>
+            case ("Developer" || "Desinger"):<br>
+            salary = 7000;<br>
+            console.log(`The salary is ${salary}`)<br>
+            default:<br>
+            salary = 4000;<br>
+            console.log(`The salary is ${salary}`);<br>
+            }
+        <h3>
+            The result is : <u>The salary is 8000</u>
+
+        </h3>
+        </p>
+    </div>
+    <div id="fi">
+        <h4>
+            Transform from switch to if statement
+        </h4>
+        <p>
+            <u><b>Switch</b></u><br>
+            let holidays = 0;<br>
+            let money = 0;<br>
+            switch (holidays) {<br>
+            case 0:<br>
+            money = 5000;<br>
+            console.log(`My Money is ${money}`);<br>
+            break;<br>
+            case 1:<br>
+            case 2:<br>
+            money = 3000;<br>
+            console.log(`My Money is ${money}`);<br>
+            break;<br>
+            case 3:<br>
+            money = 2000;<br>
+            console.log(`My Money is ${money}`);<br>
+            break;<br>
+            case 4:<br>
+            money = 1000;<br>
+            console.log(`My Money is ${money}`);<br>
+            break;<br>
+            case 5:<br>
+            money = 0;<br>
+            console.log(`My Money is ${money}`);<br>
+            break;<br>
+            default:<br>
+            money = 0;<br>
+            console.log(`My Money is ${money}`);<br>
+            }
+
+        </p>
+        <p>
+            <u><b>If statement</b></u><br>
+
+            let holidays = 0;<br>
+            let money = 0;<br>
+            if (holidays === 0) {<br>
+            money = 5000;<br>
+            console.log(`My Money is ${money}`);<br>
+            } else if (holidays === 1 && 2) {<br>
+            money = 3000;<br>
+            console.log(`My Money is ${money}`);<br>
+            } else if (holidays === 4) {<br>
+            money = 1000;<br>
+            console.log(`My Money is ${money}`);<br>
+            } else if (holidays === 5) {<br>
+            money = 0;<br>
+            console.log(`My Money is ${money}`);<br>
+            } else {<br>
+            money = 0;<br>
+            console.log(`My Money is ${money}`);<br>
+            }
+        <h3>
+            The result is : <u>My Money is 5000 </u>
+
+        </h3>
+        </p>
+    </div>
+    <script type="text/javascript" src="task4.js"></script>
+
+</body>
+
+</html>
