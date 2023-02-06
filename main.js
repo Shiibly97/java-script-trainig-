@@ -353,7 +353,6 @@ let colors = ["red", "green", "black"]
 let models = [2020, 2021]
 for (let i = 0; i < products.length; i++) {
 	console.log("#".repeat(5))
-	console.log("Product:")
 	console.log(`#  ${products[i]}`)
 	console.log("#".repeat(5))
 	console.log("Colors:")
@@ -383,15 +382,22 @@ let products2 = ["keyboard", 11, 12, 13, 14, "mouse", "pen", "pad", "monitor"]
 let colors2 = ["red", "green", "black"]
 
 console.log("products 2")
+console.log("Remove String")
 for (let i = 0; i < products2.length; i++) {
+	if (typeof products2[i] === "string") {
+		continue;
+	}
+
+	console.log(products2[i])
 	if (typeof products2[i] === "number") {
 		continue;
 	}
-	console.log(products2[i])
+	console.log(products2[i],"eeeee")
 
 }
 
 //label
+console.log("label")
 let products3 = ["keyboard", "mouse", "pen", "pad", "monitor"]
 let colors3 = ["red", "green", "black"]
 
@@ -399,10 +405,27 @@ console.log("products 3")
 mainLoop: for (let i = 0; i < products.length; i++) {
 	console.log(`# ${products3[i]}`)
 
-nestedLoop: for (let j = 0; j < colors3.length; j++) {
-	console.log(`- ${colors3[j]}`)
-	if (colors[j] === "green")
-		break mainLoop;
-}
+	nestedLoop: for (let j = 0; j < colors3.length; j++) {
+		console.log(`- ${colors3[j]}`)
+		if (colors[j] === "green")
+			break mainLoop;
+	}
+	let products4 = ["keyboard", "mouse", "pen", "pad", "monitor"]
+	i = 0;
+	for (; ;) {
+		console.log(products4[i]), "dsds	";
+		i += 2;
+		if (i === products34length);
+	}
+
+
+
+
+
+
+
+
+
+
 }
 
