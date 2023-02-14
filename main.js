@@ -623,15 +623,82 @@ console.log(`${add}`)
 //swapping cases
 let swappingCases = "IbRaHiM sHiBlY"
 let invertedNumbers = [1, -10 - 20, 15, 100, -30]
-let ignoreBooleans = "Ibr121er7o"
+let ignoreNumbers = "Ibr121ah7im"
+
 
 //____.split("") ==>convert string to array
-let sw = swappingCases.split("").map(function (ele) {
-	return ele === ele.toUpperCase() ? ele.toLocaleLowerCase() : ele.toUpperCase()
-})
-//.join convert from array to string
-.join(``)
-console.log(swappingCases.split(""))
-console.log(sw)
+// let sw = swappingCases.split("").map(function (ele) {
+// 	return ele === ele.toUpperCase() ? ele.toLocaleLowerCase() : ele.toUpperCase()
+// })
+// 	//.join convert from array to string
+// 	.join(``)
+// console.log(swappingCases.split(""))
+// console.log(sw)
+
+//arrow
+console.log(`Arrow functions and swapping cases`)
+console.log(`The orginal casses ${swappingCases}`)
+
+let sw = swappingCases.split("")
+	.map((ele) => (ele === ele.toUpperCase() ? ele.toLocaleLowerCase() : ele.toUpperCase()))
+	//.join convert from array to string
+	.join(``)
+console.log(`The orginal casses ${swappingCases.split("")}`)
+console.log(`The swapping casses ${sw}`)
 
 //inverted numbers 
+let inv = invertedNumbers.map(function (ele) {
+	return -ele;
+})
+console.log(inv)
+
+//Ignore Numbers
+let ign = ignoreNumbers.split("").map(function (ele) {
+	return isNaN(parseInt(ele)) ? ele : "";
+})
+	.join("")
+console.log(ign)
+
+//filter 
+//get friends with a name start with a
+let friend11 = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+//get friends with a name start with a
+console.log("get friends name start with (a)")
+
+let filterFriends = friend11.filter(function (ele) {
+	return ele.startsWith("A") ? true : false;
+})
+console.log(filterFriends);
+
+
+//Get even Numbers 
+console.log("Get even Numbers ")
+let numbers2 = [11, 20, 2, 5, 17, 10];
+let evenNumbers = numbers2.filter(function (ele) {
+	return ele % 2 === 0 ? true : false;
+})
+console.log(evenNumbers)
+
+
+//test map VS filter 
+console.log("add map")
+let addMap = evenNumbers.map(function (ele) {
+	return ele + ele;
+})
+console.log(addMap)
+console.log("add filter")
+let addFilter = evenNumbers.filter(function (ele) {
+	return ele + ele;
+})
+console.log(addFilter)
+
+
+const assert = chai.assert;
+
+// describe("Create Phone Number", () => {
+// 	it("Fixed tests", () => {
+// 		assert.strictEqual(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
+// 		assert.strictEqual(createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), "(111) 111-1111");
+// 		assert.strictEqual(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
+// 	});
+// });
