@@ -198,4 +198,77 @@ loop control
 - continue
 - label
 
+advanced loop
+i=0;
+for ( ; ; )
+{
+  i++;
+  if (i ..............){
+
+  }
+}
+
+while loop 
+
+syntax 
+while(condition) {
+   statement(s);
+}
+
+do while 
+  Syntax
+do
+  statement
+while (condition);
+
+function
+  what is a function 
+    user-defined vs built in 
+    syntax + basic usage 
+    example from real life 
+    parameter + argument 
+    parctical example
+    syntax
+
+    function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+return 
+automatic semicolon insertion 
+interruptting 
+
+
+default function parameter
+function sayhello1(username="unkown", age="unknown")
+  fuction parameters default (undefined)
+  old stratiges [if condition + logical or]
+es6
+
+rest parameters
+only one allowed
+must be last element
+
+anonymous function 
+calling named function  vs anonymous function 
+argument to other function 
+  task without name 
+  setTimeout 
+  arrow functions 
+
+  regular vs arrow 
+    multiple lines 
+
+scoope 
+Global and local
+
+
+___.split("")==> convert fron string to array
+map
+higher order function 
+call back function
+sawpping cases
+invert numbers 
+ignore boolean value
+
 */

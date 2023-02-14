@@ -177,7 +177,7 @@ if (theGender === "Male") {
 	console.log("Mrs");
 }
 
-// condition ? if true : if false
+// condition ?  true :  false
 theGender === "Female" ? console.log("Mr") : console.log("Mrs");
 
 console.log(`Hello ${theGender === "Feamle" ? 'Mr' : 'Mrs'} ${theNm}`)
@@ -369,7 +369,7 @@ for (let i = 0; i < products.length; i++) {
 let products1 = ["keyboard", 11, 12, 13, 14, "mouse", "pen", "pad", "monitor"]
 let colors1 = ["red", "green", "black"]
 
-console.log("products 1")
+console.log("products 1 break")
 for (let i = 0; i < products1.length; i++) {
 	console.log(products1[i])
 	if (products1[i] === "pen") {
@@ -381,23 +381,23 @@ for (let i = 0; i < products1.length; i++) {
 let products2 = ["keyboard", 11, 12, 13, 14, "mouse", "pen", "pad", "monitor"]
 let colors2 = ["red", "green", "black"]
 
-console.log("products 2")
+console.log("products 2 continue")
 console.log("Remove String")
 for (let i = 0; i < products2.length; i++) {
 	if (typeof products2[i] === "string") {
 		continue;
-	}
-
-	console.log(products2[i])
-	if (typeof products2[i] === "number") {
-		continue;
-	}
-	console.log(products2[i],"eeeee")
-
+	} console.log(products2[i])
 }
-
+console.log("products 2 break")
+console.log("Remove numbers")
+for (let i = 0; i < products2.length; i++) {
+	console.log(products2[i])
+	if (typeof products2[i] === "monitor") {
+		break;
+	}
+}
 //label
-console.log("label")
+document.write("<h1>#Label</h1><br>")
 let products3 = ["keyboard", "mouse", "pen", "pad", "monitor"]
 let colors3 = ["red", "green", "black"]
 
@@ -407,25 +407,231 @@ mainLoop: for (let i = 0; i < products.length; i++) {
 
 	nestedLoop: for (let j = 0; j < colors3.length; j++) {
 		console.log(`- ${colors3[j]}`)
-		if (colors[j] === "green")
+		if (colors[j] === "black") {
 			break mainLoop;
+		}
 	}
-	let products4 = ["keyboard", "mouse", "pen", "pad", "monitor"]
-	i = 0;
-	for (; ;) {
-		console.log(products4[i]), "dsds	";
-		i += 2;
-		if (i === products34length);
-	}
+}
+document.write("Loop Advanced ")
+let products4 = ["MAZDA", "MER.", "TOYOTA", "SUPRA", "BWM", "X6"]
+let u = 0;
 
-
-
-
-
-
-
-
-
+for (; ;) {
+	document.write(products4[u])
+	u += 2;
+	if (u === products4.length) break;
 
 }
 
+
+document.write(`<h1 style="text-align: center;text-decoration: underline;">Loop Advanced </h1>`)
+let products5 = ["MAZDA", "MER.", "TOYOTA", "SUPRA", "BWM", "X6"]
+let colors4 = ["red", "green", "black"]
+let showCount = 5;
+document.write('<h3 class="h3">Car Items product 5</h3>')
+
+for (i = 0; i < showCount; i++) {
+	document.write(`<div class="product5">`)
+	document.write(`<span>${[i + 1]} - ${products5[i]}<br></span>`);
+	for (let j = 0; j < colors4.length; j++) {
+		document.write(`<br><span> ${[j + 1]} - The colors are ${colors4[j]} </span>`)
+	}
+	document.write(`<br>Used ' join ' ( ${colors4.join(" | ")} )`)
+	document.write(`</div>`)
+}
+console.log("While Loop")
+let n = ["MAZDA", "MER.", "TOYOTA", "SUPRA", "BWM", "X6"];
+let index = 0;
+
+while (index < n.length) {
+	console.log(n[index])
+	index += 1;
+}
+let products6 = ["MAZDA", "MER.", "TOYOTA", "SUPRA", "BWM", "X6"];
+let index1 = 10;
+do {
+	console.log(index1)
+	index1++;
+} while (false);
+console.log(index1);
+
+function sayHello(userName) {
+	console.log(`hola ${userName}`)
+}
+sayHello("ibrahim");
+sayHello("hamzeh");
+sayHello("mohammed");
+
+function generateYears(start, end, exclude) {
+	for (let i = start; i <= end; i++) {
+		if (i === exclude) {
+			continue;
+		}
+		document.write(`<p>${i}</p>`)
+	}
+}
+generateYears(1997, 2023, 2020)
+
+console.log("Function Return")
+function calc(num1, num2) {
+	return num1 + num2;
+}
+result = calc(10, 20)
+console.log(result)
+
+function generate(start, end) {
+	for (let i = start; i <= end; i++) {
+		if (i === 15) {
+			return "Interrupting";
+		}
+		console.log(i)
+	}
+}
+generate(10, 20)
+
+
+function sayHello1(username = "unknown", age = "unknown") {
+	// if (age === undefined) {
+	// 	age = "unknown"
+	// }
+	// age = age || "unknown"
+	return `Hello your name is ${username} and your age is ${age}`;
+}
+console.log(sayHello1("Ibrahim", 25))
+
+console.log("function rest")
+function calCu(...numbers1) {
+	let result1 = 0
+	for (let i = 0; i < numbers1.length; i++) {
+		result1 += numbers1[i] //result = result + numbers1[i]
+	}
+	return `The result is ${result1}`;
+}
+console.log(calCu(10, 20, 30, 40, 50, 60, 70))
+
+
+
+
+document.write(`<div class="advanced">`)
+document.write("<h1>Function Ultimate Practice</h1>")
+document.write("<hr>")
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) {
+	document.write(`<div>`)
+	document.write(`<h3>Welcome ${us}</h3>`)
+	document.write(`<h3>Your age is : ${ag}</h3>`)
+	document.write(`<h3>Hour rate is : $${rt}</h3>`)
+	if (show === "Yes") {
+		if (sk.length > 0) {
+			document.write(`<h3> Skills is :${sk.join(" | ")}</h3>`)
+		} else {
+			document.write(`<h3> Skills is : No Skills</h3>`)
+		}
+	} else {
+		document.write(`<h3> Skills is hidden </h3>`)
+	}
+
+
+	document.write(`</div>`)
+	document.write(`</div>`)
+
+}
+showInfo("Ibrahim", 25, 20, "Yes", " HTML", "CSS", "JavaScript")
+
+
+
+//Nested return 
+
+function sayMassege(fName, lName) {
+	let message = `Hello`
+	function coctMsg() {
+		function getFullName() {
+			return `${fName} ${lName}`
+		}
+		return `${message} ${getFullName()}`
+	}
+	return coctMsg();
+}
+console.log(`Nested Return ==>(${sayMassege("Ibrahim", "Shibly")})`)
+
+
+// Arrow 
+// One parameter
+let print = num => num;
+console.log(print(100))
+//multiple line
+let print1 = (num1, num2) => num1 + num2;
+console.log(print1(100, 50))
+
+
+//Scoope 
+//This is a Global 
+var a = 1;
+let b = 2;
+
+function showText() {
+	var a = 10;
+	let b = 20;
+	console.log(`Function from the local a = ${a}`)
+	console.log(`Function from the local b = ${b}`)
+}
+showText()
+console.log(`From the global a = ${a}`)
+console.log(`From the global b = ${b}`)
+
+//scoope [if switch for]
+let x = 10;
+if (true) {
+	let x = 50;
+	console.log(`from if block ${x}`)
+}
+console.log(`from global ${x}`)
+
+//way 1
+let myNums = [1, 2, 3, 4, 5, 6]
+let newArray = []
+
+for (let i = 0; i < myNums.length; i++) {
+	newArray.push(myNums[i] + myNums[i])
+}
+console.log(newArray)
+
+//another way using map 
+//map (call back function)
+//annymous function
+let addSelf = myNums.map(function (element, index, arr) {
+	// console.log(`Current Element ${element}`)
+	// console.log(`Current Index ${index}`)
+	// console.log(`Array [${arr}]`)
+	// console.log(`This argument => ${this}`)
+	return element + element;
+}, 10)
+console.log("This is the array", myNums)
+console.log("Array Map", addSelf)
+
+//arrow
+// let addSelf1 = myNums.map((a) => a + a)
+
+// console.log(`Arrow [${addSelf1}]`)
+
+function addittion(ele) {
+	return ele + ele;
+}
+let add = myNums.map(addittion)
+console.log(`${add}`)
+
+
+//swapping cases
+let swappingCases = "IbRaHiM sHiBlY"
+let invertedNumbers = [1, -10 - 20, 15, 100, -30]
+let ignoreBooleans = "Ibr121er7o"
+
+//____.split("") ==>convert string to array
+let sw = swappingCases.split("").map(function (ele) {
+	return ele === ele.toUpperCase() ? ele.toLocaleLowerCase() : ele.toUpperCase()
+})
+//.join convert from array to string
+.join(``)
+console.log(swappingCases.split(""))
+console.log(sw)
+
+//inverted numbers 
